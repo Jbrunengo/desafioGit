@@ -1,0 +1,165 @@
+
+*{font-family: Arial, Helvetica, sans-serif;
+  line-height: 22px;
+}
+
+header{
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+    border: 100px black;
+    padding: 5px;
+    text-align: center;  
+    border-bottom: #8EBD2B solid 2px;   
+}
+
+.menu ul li{
+    display: inline-block; 
+    list-style-type: none; 
+    text-align: center;
+    vertical-align: middle;
+    font-size:20px;
+    background-color: #8EBD2B;
+    border-radius: 20px;
+    padding-inline: 98px;
+}
+.menu{
+    text-align: center;
+}
+
+h2{ background-color: rgb(226, 226, 226);
+    color: blue; 
+    border: 2px black;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 3px;
+    border-radius: 20px;
+    }
+#quienes_somos p{
+    line-height: 22px;
+    display: inline-block;
+
+}
+
+                       
+.footer {
+border-top: solid black 2px;
+list-style-type: none;
+padding-top: 10px;
+width: 1300px;
+line-height: 40px;
+
+}    
+.img_quehacemos {
+    border-radius: 200px;
+    border: 5px;
+    padding: 25px;
+    height: 200px;
+    width: 200px; 
+}
+
+#pasto_gif{
+    padding-left:250px
+    
+}
+
+h3{padding-left: 50px;
+}
+
+.article{
+text-align: justify;
+}
+
+#comercial h1{
+background-color: rgb(226, 226, 226);
+color: blue; 
+border: 2px black;
+text-align: center;
+vertical-align: middle;
+border-radius: 20px;    
+
+}
+#industrial h1{
+background-color: rgb(226, 226, 226);
+color: blue; 
+border: 2px black;
+text-align: center;
+vertical-align: middle;
+border-radius: 20px; 
+}
+#domiciliaria h1{
+background-color: rgb(226, 226, 226);
+color: blue; 
+border: 2px black;
+text-align: center;
+vertical-align: middle;
+border-radius: 20px; 
+}
+#domiciliaria p {
+    text-align: center;
+}
+#industrial p{
+    text-align: center;
+}
+#comercial p{
+    text-align: center;
+}
+
+.img_donde{
+    border-radius: 200px;
+}
+#header{
+    display: inline-block;
+}
+#datos{
+    border: solid black 1px;
+    width: 503px;
+    text-align: center;
+    margin-left: 405px;
+    line-height: 45px;
+    border-radius: 100px;
+    height: 213px;
+    padding: 55px 30px 3px 30px;
+    margin-top: 30px;
+    
+}
+
+#rubro{
+    border: solid black 1px;
+    margin-top: 20px;
+    padding-top: 15px;
+    width: 502px;
+    margin-left: 430px;
+    border-radius: 58px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+#comentario{
+    text-align: center;
+    margin: 20px;
+}
+#enviar {
+    margin-left: 593px;
+    margin-top: 30px;
+    height: 30px;
+    border-radius: 8px;
+    font-family: system-ui;
+    font-size: large;
+    text-align: center;
+}
+
+#clear{
+    border-radius: 8px;
+    font-family: system-ui;
+    font-size: large;
+    height: 25px;   
+}
+#textarea {
+    border-radius: 40px;
+    padding-left: 40px;
+    margin-left: 215px;
+    }
