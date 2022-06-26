@@ -1,33 +1,259 @@
 
-*{font-family: Arial, Helvetica, sans-serif;
-  line-height: 22px;
+*{  border: 0px;
+    padding: 0px;
 }
 
-header{
+@media screen and (max-width: 600px){ /*quueries para mobile*/
+ 
+    #grilla{ /*grilla para el INDEX*/
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "barra quienes_somos"
+    "pasto_gif pasto_gif"
+    "footer footer";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100px 2fr 1fr 70px;
+    grid-gap: 5px;
+
+}
+#header{ /*utilizo este id para todos los header*/
+    grid-area: header;
+       padding-top: 10px;
+    border-bottom: #8EBD2B solid 1px;
+    display: flex;
+    justify-content: center;
+}
+#header div img {
+    height: 85px;
+    width: auto;
+}
+
+#barra{
+    grid-area: barra;
+    font-size: 13px;
+    line-height: 100px;
+    border-right: solid 1px #8EBD2B;
+        
+}
+
+#quienes_somos{
+    grid-area: quienes_somos;
+    text-align: justify;
+    padding:10px;
+    line-height: 25px;
+}
+
+.tituloh2{
+    background-color: rgb(226, 226, 226);
+    color: blue; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: -1px;
+    border-radius: 20px;
+    margin: 10px 0px 0px 10px;
+}
+
+#parrafo{
+    margin: 60px 5px 0px 15px;
+}
+
+#pasto_gif{
+    grid-area: pasto_gif;
+    padding: 0px 20px 0px 96px;
+
+    
+
+}
+
+
+#footer{ /*utilizo este ID para todos os footer*/
+    grid-area: footer;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: solid #8EBD2B 1px;
+}
+footer ul li{
     display: inline-block;
+}
+
+#grilla_hacemos{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "parques desin"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 70px;
+    grid-gap: 5px;
+    }
+#parques{
+    border-right: solid 1px #8EBD2B;
+}
+#desin ul li{
+    list-style-type: none;
+}
+.h2_hacemos{
+    background-color: rgb(226, 226, 226);
+    color: blue; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: -1px;
+    border-radius: 20px;
+    margin: 10px 10px 0px 10px;
+    font-size: small;
+}
+.p_hacemos{
+    text-align: justify;
+    margin: 10px 10px 0px 10px;
+}
+.ul_hacemos{
+    text-align: justify;
+    margin: 10px 10px 0px 10px;
+}
+
+.donde{
+    display: flex;
+    flex-direction: column;    
+}
+.donde h1{
+    background-color: rgb(226, 226, 226);
+    color: blue; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: -1px;
+    border-radius: 20px;
+    margin: 10px 10px 0px 10px;
+    font-size:large;
+}
+.donde p {
+    text-align: justify;
+}
+.img_donde{
+    padding-top: 20px;    
+}
+#formulario{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "datos"
+    "rubro"
+    "comentarios"
+    "botones"
+    "footer";
+    grid-template-columns: 100hv; 
+    grid-gap: 5px; 
+}
+.border{
+    border: solid #8EBD2B 1px;
+}
+#header{
+    grid-area: header;
+}
+#datos{ 
+    grid-area: datos;
+    padding: 5px;
+}
+#rubro{
+    grid-area: rubro;
+    padding: 5px;
+}
+#comentarios{
+    grid-area: comentarios;
+    padding: 5px;
+}
+#botones{
+    grid-area: botones;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.img_quehacemos{
+    visibility: hidden;
+}
+
+} /*hasta aca es el style para mobile.*/
+
+@media screen and (min-width: 600px)
+{
+header{
     background-color: white;
     width: 100%;
     border: 100px black;
     padding: 5px;
-    text-align: center;  
-    border-bottom: #8EBD2B solid 2px;   
+    text-align: center;
 }
+.tituloh2{ background-color: rgb(226, 226, 226);
+        color: blue; 
+        border: 2px black;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        vertical-align: middle;
+        letter-spacing: 3px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        }
 
-.menu ul li{
+#barra ul li  { /*barra navegacion del Index*/
     display: inline-block; 
     list-style-type: none; 
     text-align: center;
     vertical-align: middle;
     font-size:20px;
+    padding-inline: 110px;
     background-color: #8EBD2B;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-radius: 20px;
-    padding-inline: 98px;
-}
-.menu{
-    text-align: center;
+   }
+#barra{
+    display: flex;
+    justify-content: center;
 }
 
-h2{ background-color: rgb(226, 226, 226);
+#quienes_somos{
+    line-height: 22px;
+}
+
+#pasto_gif{
+display: flex;
+justify-content: center;
+}
+#footer ul li{ /*utilizo este ID para todos os footer*/
+    display: inline-block;
+    
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    border-top: solid #8EBD2B 1px;
+    }
+#logo{
+    width: auto;
+    height: 100px;
+}
+.img_quehacemos {
+    border-radius: 200px;
+    border: 5px;
+    padding: 25px;
+    height: 200px;
+    width: 200px;}
+
+ h2{ 
+    background-color: rgb(226, 226, 226);
     color: blue; 
     border: 2px black;
     padding-left: 30px;
@@ -37,129 +263,58 @@ h2{ background-color: rgb(226, 226, 226);
     text-align: center;
     vertical-align: middle;
     letter-spacing: 3px;
+    border-radius: 20px;}
+
+h3{ background-color: rgb(226, 226, 226);
+    color: blue; 
+    border: 2px black;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 3px;
     border-radius: 20px;
-    }
-#quienes_somos p{
-    line-height: 22px;
-    display: inline-block;
-
+    font-size: 12px;
 }
-
-                       
-.footer {
-border-top: solid black 2px;
-list-style-type: none;
-padding-top: 10px;
-width: 1300px;
-line-height: 40px;
-
-}    
-.img_quehacemos {
-    border-radius: 200px;
-    border: 5px;
-    padding: 25px;
-    height: 200px;
-    width: 200px; 
-}
-
-#pasto_gif{
-    padding-left:250px
-    
-}
-
-h3{padding-left: 50px;
-}
-
-.article{
-text-align: justify;
-}
-
-#comercial h1{
-background-color: rgb(226, 226, 226);
-color: blue; 
-border: 2px black;
-text-align: center;
-vertical-align: middle;
-border-radius: 20px;    
-
-}
-#industrial h1{
-background-color: rgb(226, 226, 226);
-color: blue; 
-border: 2px black;
-text-align: center;
-vertical-align: middle;
-border-radius: 20px; 
-}
-#domiciliaria h1{
-background-color: rgb(226, 226, 226);
-color: blue; 
-border: 2px black;
-text-align: center;
-vertical-align: middle;
-border-radius: 20px; 
-}
-#domiciliaria p {
+h1{ 
+    background-color: rgb(226, 226, 226);
+    color: blue; 
+    border: 2px black;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
-}
-#industrial p{
-    text-align: center;
-}
-#comercial p{
-    text-align: center;
-}
+    vertical-align: middle;
+    letter-spacing: 3px;
+    border-radius: 20px;}
 
-.img_donde{
-    border-radius: 200px;
-}
-#header{
-    display: inline-block;
-}
 #datos{
-    border: solid black 1px;
-    width: 503px;
-    text-align: center;
-    margin-left: 405px;
-    line-height: 45px;
-    border-radius: 100px;
-    height: 213px;
-    padding: 55px 30px 3px 30px;
-    margin-top: 30px;
-    
+   display: inline-block;
+   margin: 20px 500px 20px 500px; 
+   line-height: 30px;
 }
-
-#rubro{
-    border: solid black 1px;
-    margin-top: 20px;
-    padding-top: 15px;
-    width: 502px;
-    margin-left: 430px;
-    border-radius: 58px;
-    text-align: center;
-    margin-bottom: 25px;
-}
-#comentario{
-    text-align: center;
-    margin: 20px;
-}
-#enviar {
-    margin-left: 593px;
-    margin-top: 30px;
-    height: 30px;
-    border-radius: 8px;
-    font-family: system-ui;
-    font-size: large;
-    text-align: center;
-}
-
-#clear{
-    border-radius: 8px;
-    font-family: system-ui;
-    font-size: large;
-    height: 25px;   
-}
-#textarea {
-    border-radius: 40px;
-    padding-left: 40px;
-    margin-left: 215px;
+label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     }
+#rubro div{
+    display: inline-block;
+ }
+#rubro{
+    margin: 25px 450px 25px;
+}
+#form{
+    border-top: #8EBD2B solid 1px;
+}
+#botones{
+    margin: 10px 450px 10px;
+}
+}
+#gracias:hover {
+    transform:scale(1.5);
+}
+
+
+   
