@@ -3,7 +3,7 @@
     padding: 0px;
 }
 
-@media screen and (max-width: 600px){ /*quueries para mobile*/
+@media screen and (max-width: 600px){ /*queries para mobile*/
  
     #grilla{ /*grilla para el INDEX*/
     display: grid;
@@ -218,7 +218,7 @@ header{
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 20px;
-   }
+       }
 #barra{
     display: flex;
     justify-content: center;
@@ -231,7 +231,17 @@ header{
 #pasto_gif{
 display: flex;
 justify-content: center;
+animation-duration: 5s;
+animation-name: aparecer;
+
 }
+@keyframes aparecer {
+        from {
+          margin-left: 150%;          
+        }   
+        
+}
+
 #footer ul li{ /*utilizo este ID para todos os footer*/
     display: inline-block;
     
@@ -245,6 +255,10 @@ justify-content: center;
     width: auto;
     height: 100px;
 }
+
+
+}
+
 .img_quehacemos {
     border-radius: 200px;
     border: 5px;
@@ -311,10 +325,25 @@ label{
 #botones{
     margin: 10px 450px 10px;
 }
-}
-#gracias:hover {
+
+#img_gracias:hover {
     transform:scale(1.5);
+    
+}
+#img_gracias{
+    animation-duration: 1s;
+    transition: 1s;
+}
+.img_quehacemos:hover {
+transform: scale(2.2);
+}
+.img_quehacemos{
+    animation-duration: 1s;
+    transition: 1s;
+}
+
+#barra nav ul li a:hover{
+    background-color: whitesmoke;
 }
 
 
-   
